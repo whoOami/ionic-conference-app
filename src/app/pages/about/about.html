@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>About</ion-title>
+    <ion-title>Sobre nosotros</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="presentPopover($event)">
         <ion-icon slot="icon-only" name="more"></ion-icon>
@@ -14,35 +14,31 @@
 
 <ion-content>
   <div class="about-header">
-    <img src="assets/img/ionic-logo-white.svg" alt="ionic logo">
+    <img src="assets/img/appicon.svg" alt="Flisol Bogotá logo">
   </div>
   <div padding class="about-info">
-    <h4>Ionic Conference</h4>
+    <h4>Festival Latinoamericano de Instalaci&oacute;n de Software Libre</h4>
 
     <ion-list lines="none">
       <ion-item>
         <ion-icon name="calendar" slot="start"></ion-icon>
-        <ion-label>Date</ion-label>
+        <ion-label>Fecha</ion-label>
         <ion-datetime displayFormat="MMM DD, YYYY" max="2056" [(ngModel)]="conferenceDate"></ion-datetime>
       </ion-item>
 
       <ion-item>
         <ion-icon name="pin" slot="start"></ion-icon>
-        <ion-label>Location</ion-label>
+        <ion-label>Ubicaci&oacute;n</ion-label>
         <ion-select>
-          <ion-select-option value="madison" selected>Madison, WI</ion-select-option>
-          <ion-select-option value="austin">Austin, TX</ion-select-option>
-          <ion-select-option value="chicago">Chicago, IL</ion-select-option>
-          <ion-select-option value="seattle">Seattle, WA</ion-select-option>
+          <ion-select-option value="ud" selected>Universidad Distrital Francisco Jos&eacute; de Caldas</ion-select-option>
         </ion-select>
       </ion-item>
     </ion-list>
 
-    <p>
-      The Ionic Conference is a one-day conference featuring talks from the Ionic team. It is focused on Ionic applications being
-      built with Ionic 2. This includes migrating apps from Ionic 1 to Ionic 2, Angular concepts, Webpack, Sass, and many
-      other technologies used in Ionic 2. Tickets are completely sold out, and we’re expecting more than 1000 developers
-      – making this the largest Ionic conference ever!
-    </p>
+	<p>El&nbsp;<strong>FLISoL</strong>&nbsp;es el evento de difusión de&nbsp;<a class="https" href="https://es.wikipedia.org/wiki/Software_libre">Software Libre</a>&nbsp;más grande en Latinoamérica y está dirigido a&nbsp;<em><strong>todo tipo de público</strong></em>: estudiantes, académicos, empresarios, trabajadores, funcionarios públicos, entusiastas y aun personas que no poseen mucho conocimiento informático.<br>
+	<span id="line-11" class="anchor"></span><br>
+	<span id="line-12" class="anchor"></span>El FLISoL se realiza desde el año 2005 y desde el 2008 se adoptó su realización el 4to Sábado de abril de cada año.&nbsp;<strong>La entrada es gratuita</strong>&nbsp;y su principal objetivo es promover el uso del software libre, dando a conocer al público en general su filosofía, alcances, avances y desarrollo.&nbsp;<span id="line-13" class="anchor"></span><br>
+	<span id="line-14" class="anchor"></span><br>
+	<span id="line-15" class="anchor"></span>El evento es organizado por las diversas comunidades locales de Software Libre y se desarrolla simultáneamente con eventos en los que se instala, de manera gratuita y totalmente legal, software libre en las computadoras que llevan los asistentes. Además, en forma paralela, se ofrecen charlas, ponencias y talleres, sobre temáticas locales, nacionales y latinoamericanas en torno al Software Libre, en toda su gama de expresiones: artística, académica, empresarial y social.&nbsp;<span id="line-16" class="anchor"></span></p>
   </div>
 </ion-content>

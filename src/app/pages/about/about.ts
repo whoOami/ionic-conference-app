@@ -10,7 +10,7 @@ import { PopoverPage } from '../about-popover/about-popover';
   styleUrls: ['./about.scss'],
 })
 export class AboutPage {
-  conferenceDate = '2047-05-17';
+  conferenceDate = '2019-04-27';
 
   constructor(public popoverCtrl: PopoverController) { }
 
