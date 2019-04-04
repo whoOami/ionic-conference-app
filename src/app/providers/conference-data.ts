@@ -17,7 +17,7 @@ export class ConferenceData {
     if (this.data) {
       return of(this.data);
     } else {
-		return this.http.get('http://api.flisolbogota.org').pipe(map(this.processData, this));
+		return this.http.get('http://api.flisolbogota.org:8000').pipe(map(this.processData, this));
     }
   }
 
