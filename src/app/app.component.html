@@ -24,39 +24,6 @@
           </ion-menu-toggle>
         </ion-list>
 
-        <ion-list *ngIf="!loggedIn">
-          <ion-list-header>
-            Cuenta
-          </ion-list-header>
-
-          <ion-menu-toggle auto-hide="false">
-            <ion-item routerLink="/login">
-              <ion-icon slot="start" name="log-in"></ion-icon>
-              <ion-label>
-                Iniciar Sesi&oacute;n
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-
-          <ion-menu-toggle auto-hide="false">
-            <ion-item routerLink="/support">
-              <ion-icon slot="start" name="help"></ion-icon>
-              <ion-label>
-                Soporte
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-
-          <ion-menu-toggle auto-hide="false">
-            <ion-item routerLink="/signup">
-              <ion-icon slot="start" name="person-add"></ion-icon>
-              <ion-label>
-                Registrese
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-        </ion-list>
-
       </ion-content>
     </ion-menu>
 

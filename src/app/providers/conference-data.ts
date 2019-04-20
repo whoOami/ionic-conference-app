@@ -14,10 +14,34 @@ export class ConferenceData {
   constructor(public http: HttpClient, public user: UserData) {}
 
   load(): any {
+	  /*var data_src='';
+	  var src='local';
+	  async function verify(){
+		  var xhttp = new XMLHttpRequest();
+		  var src='local';
+		  xhttp.onreadystatechange = function() {
+			  if (this.readyState == 4 && this.status == 200) {
+				  console.log("success API");
+				  return 'api';
+			  }		  
+		  };
+		  xhttp.open("GET", 'http://api.flisolbogota.org', true);
+		  ', true);
+		  await xhttp.send();
+	  }
+	  src=verify();
+	  console.log(src);
+	  //console.log(src.__zone_symbol__value);
+	  if(src=='local'){
+		  data_src='assets/data/data.json';
+	  }else{
+	  	  data_src='http://api.flisolbogota.org';
+	  }*/
+	let data_src='https://api.flisolbogota.org';
     if (this.data) {
       return of(this.data);
     } else {
-		return this.http.get('http://api.flisolbogota.org:8000').pipe(map(this.processData, this));
+		return this.http.get(data_src).pipe(map(this.processData, this));
     }
   }
 
